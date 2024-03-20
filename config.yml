@@ -1,0 +1,26 @@
+
+spring:
+  h2:
+    console: 
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+
+microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://payment-service/payment/doPayment
+  order-service:
+    endpoints:
+      endpoint:
+        uri: http://oirder-service/order/bookOrder
