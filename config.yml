@@ -15,11 +15,12 @@ eureka:
   instance:
     hostname: localhost
 
-payment-service:
+microservice:
+  payment-service:
     endpoints:
       endpoint:
         uri: http://payment-service/payment/doPayment
-order-service:
+  order-service:
     endpoints:
       endpoint:
         uri: http://oirder-service/order/bookOrder
