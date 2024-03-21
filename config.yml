@@ -24,4 +24,4 @@ microservice:
         uri: http://oirder-service/order/bookOrder
 
 paymentService:
-         uri: http://payment-service/payment/doPayment
+         url: http://payment-service/payment/doPayment
