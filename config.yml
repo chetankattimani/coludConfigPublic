@@ -23,7 +23,5 @@ microservice:
       endpoint:
         uri: http://oirder-service/order/bookOrder
 
-payment-service:
+paymentService:
          uri: http://payment-service/payment/doPayment
-  order-service:
-        uri: http://oirder-service/order/bookOrder
